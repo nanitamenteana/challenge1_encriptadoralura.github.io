@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+		<title>Challenge I: Encriptador Allura</title>
+		<link rel="stylesheet" href="estilos.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="javascript.js"></script>
+
+	</head>
+
+	<body>
+		<div class="container">
+			<!--Logo Allura-->
+			<div class="logo">
+				<img class="logoimg" src="Imagenes/Vector.png" alt="Logo Allura">
+				<!--Título de su sitio web-->
+				<h1 class="title">Encriptador de mensajes</h1>
+			</div>
+
+			<!--Cajón contenedor del texto que escribe el usuario - Campo para el texto que va a ser encriptado/desencriptado-->
+			<div class="izquierda_left">
+				<input class="text_input" id="inputTexto"
+				type="text" placeholder="Ingrese el texto aquí">
+			</div>
+
+			<!--Contenedor de la imagen del muñeco - Área para mostrar el texto encriptado/desencriptado-->
+			<div class="derecha_right">
+				<!--Imagen muñeco-->
+				<img src="Imagenes/Muñeco.png" alt="Imagen del Muñeco" id="imgDerecha">
+
+				<!--Mensaje para el usuario antes de encriptar o desencriptar-->
+				<h1 id="texto">Ningún mensaje fue encontrado</h1>
+
+				<!--Campo para el el texto que va a ser encriptado/desencriptado-->
+				<textarea id="texto2" name="name" rows="8" cols="80">Ingrese el texto que desees encriptar o desencriptar</textarea>
+
+				<!--Botón copiar-->
+				<button id ="copiar" type="button" name="button" onclick="copiar()">¡Copiar!</button>
+			</div>
+
+			<!--Botones abajo-->
+			<div class="boton_izquierdo">
+				<p>Solo minúsculas y sin acentos</p>
+
+				<!--Un botón para encriptar-->
+				<button type="button" id="btn_encriptar" onclick="encriptar()">Encriptar</button>
+
+				<!--Un botón para desencriptar-->
+				<button type="button" id="btn_desencriptar" onclick="desencriptar()">Desencriptar</button>
+			</div>
+
+		</div>
+	</body>
+</html>
